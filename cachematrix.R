@@ -1,7 +1,8 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Implemented two functions, one for creating a matrix that has 2 getters and 2 setters access functions
+## And one for calculating the inverse of the matrix, by first checking if the inverse is stored in cache,
+## and if so returning it, and if not, calculate and return it
 
-## Write a short comment describing this function
+## A function that gets a matrix, stores it in an internal variable and defines 4 access functions
 
 makeCacheMatrix <- function(x = matrix()) 
 {
@@ -20,7 +21,8 @@ makeCacheMatrix <- function(x = matrix())
 }
 
 
-## Write a short comment describing this function
+## A function that gets a matrix created with the makeCacheMatrix function and returns its inverse,
+## from storage or if storage is empty, uses solve function to calculate it
 
 cacheSolve <- function(x, ...) 
 {
